@@ -1,5 +1,6 @@
 package org.example;
 
+import static org.example.Status.EN_COURS_DE_LIBERATION;
 import static org.example.Status.LIBRE;
 
 public class Main {
@@ -16,16 +17,16 @@ public class Main {
         Appartement appartement1 = new Appartement();
         appartement1.setId("A1");
         appartement1.setTitre("Appartement1");
-        appartement1.setDescription("Appartement1");
+        appartement1.setDescription("Description1");
         appartement1.setLoyerMensuel(40000);
         appartement1.setStatut(LIBRE);
 
         Appartement appartement2 = new Appartement();
-        appartement2.setId("A1");
-        appartement2.setTitre("Appartement1");
-        appartement2.setDescription("Appartement1");
+        appartement2.setId("A2");
+        appartement2.setTitre("Appartement2");
+        appartement2.setDescription("Description2");
         appartement2.setLoyerMensuel(40000);
-        appartement2.setStatut(LIBRE);
+        appartement2.setStatut(EN_COURS_DE_LIBERATION);
 
         jade.getAppartements().add(appartement1);
         jade.getAppartements().add(appartement2);
